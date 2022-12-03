@@ -14,13 +14,7 @@ import AltSign
 
 public extension StoreApp
 {
-    #if ALPHA
     static let altstoreAppID = "com.SideStore.SideStore"
-    #elseif BETA
-    static let altstoreAppID = "com.SideStore.SideStore"
-    #else
-    static let altstoreAppID = "com.SideStore.SideStore"
-    #endif
     
     static let dolphinAppID = "me.oatmealdome.dolphinios-njb"
 }
@@ -253,7 +247,7 @@ public extension StoreApp
         app.localizedDescription = "SideStore is an alternative App Store."
         app.iconURL = URL(string: "https://user-images.githubusercontent.com/705880/63392210-540c5980-c37b-11e9-968c-8742fc68ab2e.png")!
         app.screenshotURLs = []
-        app.version = "1.0"
+        app.version = "0.1.2"
         app.versionDate = Date()
         app.downloadURL = URL(string: "http://rileytestut.com")!
         
