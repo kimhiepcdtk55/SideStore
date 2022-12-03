@@ -251,6 +251,8 @@ public extension StoreApp
         app.versionDate = Date()
         app.downloadURL = URL(string: "http://rileytestut.com")!
         
+        print("makeAltStoreApp StoreApp: \(String(describing: app))")
+        
         #if BETA
         app.isBeta = true
         #endif
