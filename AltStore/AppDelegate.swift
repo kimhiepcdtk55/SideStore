@@ -96,9 +96,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func applicationDidEnterBackground(_ application: UIApplication)
-         {
-             
-         }
+    {
+        // Make sure to update SceneDelegate.sceneDidEnterBackground() as well.
+        
+        guard let oneMonthAgo = Calendar.current.date(byAdding: .month, value: -1, to: Date()) else { return }
+        
+        let midnightOneMonthAgo = Calendar.current.startOfDay(for: oneMonthAgo)
+        DatabaseManager.shared.purgeLoggedErrors(before: midnightOneMonthAgo) { result in
+            switch result
+            {
+            case .success: break
+            case .failure(let error): print("[ALTLog] Failed to purge logged errors before \(midnightOneMonthAgo).", error)
+            }
+        }
+    }
 
     func applicationWillEnterForeground(_ application: UIApplication)
     {
@@ -368,11 +379,11 @@ private extension AppDelegate
                 for update in updates
                 {
                     guard !previousUpdates.contains(where: { $0[#keyPath(InstalledApp.bundleIdentifier)] == update.bundleIdentifier }) else { continue }
-                    guard let storeApp = update.storeApp else { continue }
-
+                    guard let storeApp = update.storeApp, let version = storeApp.version else { continue }
+                    
                     let content = UNMutableNotificationContent()
                     content.title = NSLocalizedString("New Update Available", comment: "")
-                    content.body = String(format: NSLocalizedString("%@ %@ is now available for download.", comment: ""), update.name, storeApp.version)
+                    content.body = String(format: NSLocalizedString("%@ %@ is now available for download.", comment: ""), update.name, version)
                     content.sound = .default
 
                     let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: nil)

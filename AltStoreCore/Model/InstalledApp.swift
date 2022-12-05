@@ -53,6 +53,8 @@ public class InstalledApp: NSManagedObject, InstalledAppProtocol
     @NSManaged public var team: Team?
     @NSManaged public var appExtensions: Set<InstalledExtension>
     
+    @NSManaged public private(set) var loggedErrors: NSSet /* Set<LoggedError> */ // Use NSSet to avoid eagerly fetching values.
+    
     public var isSideloaded: Bool {
         return self.storeApp == nil
     }
@@ -144,7 +146,7 @@ public extension InstalledApp
     {
         let fetchRequest = InstalledApp.fetchRequest() as NSFetchRequest<InstalledApp>
         fetchRequest.predicate = NSPredicate(format: "%K == YES AND %K != nil AND %K != %K",
-                                             #keyPath(InstalledApp.isActive), #keyPath(InstalledApp.storeApp), #keyPath(InstalledApp.version), #keyPath(InstalledApp.storeApp.version))
+                                             #keyPath(InstalledApp.isActive), #keyPath(InstalledApp.storeApp), #keyPath(InstalledApp.version), #keyPath(InstalledApp.storeApp.latestVersion.version))
         return fetchRequest
     }
     
