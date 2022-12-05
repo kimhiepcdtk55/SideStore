@@ -189,9 +189,9 @@ struct HomeScreenWidget: Widget
     }
 }
 
-struct LockScreenWidget: Widget
+struct TextLockScreenWidget: Widget
 {
-    private let kind: String = "LockAppDetail"
+    private let kind: String = "TextLockAppDetail"
     
     public var body: some WidgetConfiguration {
         if #available(iOSApplicationExtension 16, *)
@@ -199,11 +199,34 @@ struct LockScreenWidget: Widget
             return IntentConfiguration(kind: kind,
                                        intent: ViewAppIntent.self,
                                        provider: Provider()) { (entry) in
-                ComplicationView(entry: entry)
+                ComplicationView(entry: entry, style: .text)
             }
             .supportedFamilies([.accessoryCircular])
-            .configurationDisplayName("AltWidget")
-            .description("View remaining days until SideStore expires.")
+            .configurationDisplayName("AltWidget (Text)")
+            .description("View remaining days until AltStore expires.")
+        }
+        else
+        {
+            return EmptyWidgetConfiguration()
+        }
+    }
+}
+
+struct IconLockScreenWidget: Widget
+{
+    private let kind: String = "IconLockAppDetail"
+    
+    public var body: some WidgetConfiguration {
+        if #available(iOSApplicationExtension 16, *)
+        {
+            return IntentConfiguration(kind: kind,
+                                       intent: ViewAppIntent.self,
+                                       provider: Provider()) { (entry) in
+                ComplicationView(entry: entry, style: .icon)
+            }
+            .supportedFamilies([.accessoryCircular])
+            .configurationDisplayName("AltWidget (Icon)")
+            .description("View remaining days until AltStore expires.")
         }
         else
         {
@@ -217,6 +240,7 @@ struct AltWidgets: WidgetBundle
 {
     var body: some Widget {
         HomeScreenWidget()
-        LockScreenWidget()
+        IconLockScreenWidget()
+        TextLockScreenWidget()
     }
 }

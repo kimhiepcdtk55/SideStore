@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		031AF23A293E90DD00C6C881 /* LoggedError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58916FD28C7C55C00E39C8B /* LoggedError.swift */; };
+		031AF23D293E919100C6C881 /* ProgressRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031AF23B293E919100C6C881 /* ProgressRing.swift */; };
 		19104D952909BAEA00C49C7B /* libimobiledevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF45872B2298D31600BD7491 /* libimobiledevice.a */; };
 		19104DB52909C06D00C49C7B /* EmotionalDamage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19104DB42909C06D00C49C7B /* EmotionalDamage.swift */; };
 		19104DBB2909C11700C49C7B /* libem_proxy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19104DA32909BC1000C49C7B /* libem_proxy.a */; };
@@ -36,7 +38,6 @@
 		B3146ED2284F581E00BBC3FD /* Roxas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3146ECD284F580500BBC3FD /* Roxas.framework */; };
 		B3146ED3284F581E00BBC3FD /* Roxas.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3146ECD284F580500BBC3FD /* Roxas.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B376FE3E29258C8900E18883 /* OSLog+SideStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B376FE3D29258C8900E18883 /* OSLog+SideStore.swift */; };
-		B3919A52292DBE5400519575 /* ProgressRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = D504F42528AD72C50014BB5D /* ProgressRing.swift */; };
 		B39575F5284F29E20080B4FF /* Roxas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39575F4284F29E20080B4FF /* Roxas.framework */; };
 		B39F16132918D7C5002E9404 /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39F16122918D7C5002E9404 /* Consts.swift */; };
 		B39F16152918D7DA002E9404 /* Consts+Proxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39F16142918D7DA002E9404 /* Consts+Proxy.swift */; };
@@ -322,9 +323,11 @@
 		BFF0B69A2322D7D0007A79E1 /* UIScreen+CompactHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF0B6992322D7D0007A79E1 /* UIScreen+CompactHeight.swift */; };
 		BFF435D8255CBDAB00DD724F /* ALTApplication+AltStoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF435D7255CBDAB00DD724F /* ALTApplication+AltStoreApp.swift */; };
 		BFF615A82510042B00484D3B /* AltStoreCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF66EE7E2501AE50007EE018 /* AltStoreCore.framework */; };
+		D52C08EE28AEC37A006C4AE5 /* AppVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52C08ED28AEC37A006C4AE5 /* AppVersion.swift */; };
 		D533E8B72727841800A9B5DD /* libAppleArchive.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D533E8B62727841800A9B5DD /* libAppleArchive.tbd */; settings = {ATTRIBUTES = (Weak, ); }; };
 		D533E8BC2727BBEE00A9B5DD /* libfragmentzip.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D533E8BB2727BBEE00A9B5DD /* libfragmentzip.a */; };
 		D533E8BE2727BBF800A9B5DD /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D533E8BD2727BBF800A9B5DD /* libcurl.a */; };
+		D54DED1428CBC44B008B27A0 /* ErrorLogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54DED1328CBC44B008B27A0 /* ErrorLogTableViewCell.swift */; };
 		D55E163728776CB700A627A1 /* ComplicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55E163528776CB000A627A1 /* ComplicationView.swift */; };
 		D57DF638271E32F000677701 /* PatchApp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D57DF637271E32F000677701 /* PatchApp.storyboard */; };
 		D57DF63F271E51E400677701 /* ALTAppPatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = D57DF63E271E51E400677701 /* ALTAppPatcher.m */; };
@@ -337,6 +340,8 @@
 		D5DAE0962804DF430034D8D4 /* UpdatePatronsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DAE0952804DF430034D8D4 /* UpdatePatronsOperation.swift */; };
 		D5E1E7C128077DE90016FC96 /* FetchTrustedSourcesOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E1E7C028077DE90016FC96 /* FetchTrustedSourcesOperation.swift */; };
 		D5F2F6A92720B7C20081CCF5 /* PatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F2F6A82720B7C20081CCF5 /* PatchViewController.swift */; };
+		D5F99A1828D11DB500476A16 /* AltStore10ToAltStore11.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = D5F99A1728D11DB500476A16 /* AltStore10ToAltStore11.xcmappingmodel */; };
+		D5F99A1A28D12B1400476A16 /* StoreApp10ToStoreApp11Policy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F99A1928D12B1400476A16 /* StoreApp10ToStoreApp11Policy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -433,6 +438,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		031AF23B293E919100C6C881 /* ProgressRing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressRing.swift; sourceTree = "<group>"; };
 		19104DA32909BC1000C49C7B /* libem_proxy.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libem_proxy.a; path = "Dependencies/em_proxy/target/aarch64-apple-ios/debug/libem_proxy.a"; sourceTree = "<group>"; };
 		19104DA92909BC7100C49C7B /* em_proxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = em_proxy.h; sourceTree = "<group>"; };
 		19104DB22909C06C00C49C7B /* libEmotionalDamage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libEmotionalDamage.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -762,16 +768,21 @@
 		BFF7EC4C25081E9300BDE521 /* AltStore 8.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "AltStore 8.xcdatamodel"; sourceTree = "<group>"; };
 		BFFCFA45248835530077BFCE /* AltDaemon.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AltDaemon.entitlements; sourceTree = "<group>"; };
 		D504F42528AD72C50014BB5D /* ProgressRing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressRing.swift; sourceTree = "<group>"; };
+		D52C08ED28AEC37A006C4AE5 /* AppVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppVersion.swift; sourceTree = "<group>"; };
+		D52E988928D002D30032BE6B /* AltStore 11.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "AltStore 11.xcdatamodel"; sourceTree = "<group>"; };
 		D533E8B62727841800A9B5DD /* libAppleArchive.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libAppleArchive.tbd; path = usr/lib/libAppleArchive.tbd; sourceTree = SDKROOT; };
 		D533E8B82727B61400A9B5DD /* fragmentzip.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fragmentzip.h; sourceTree = "<group>"; };
 		D533E8BB2727BBEE00A9B5DD /* libfragmentzip.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfragmentzip.a; path = Dependencies/fragmentzip/libfragmentzip.a; sourceTree = SOURCE_ROOT; };
 		D533E8BD2727BBF800A9B5DD /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = Dependencies/libcurl/libcurl.a; sourceTree = SOURCE_ROOT; };
+		D54DED1328CBC44B008B27A0 /* ErrorLogTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorLogTableViewCell.swift; sourceTree = "<group>"; };
 		D55E163528776CB000A627A1 /* ComplicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationView.swift; sourceTree = "<group>"; };
 		D57DF637271E32F000677701 /* PatchApp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PatchApp.storyboard; sourceTree = "<group>"; };
 		D57DF63D271E51E400677701 /* ALTAppPatcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALTAppPatcher.h; sourceTree = "<group>"; };
 		D57DF63E271E51E400677701 /* ALTAppPatcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALTAppPatcher.m; sourceTree = "<group>"; };
 		D57F2C9026E0070200B9FA39 /* EnableJITOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnableJITOperation.swift; sourceTree = "<group>"; };
 		D57F2C9326E01BC700B9FA39 /* UIDevice+Vibration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+Vibration.swift"; sourceTree = "<group>"; };
+		D57FE84328C7DB7100216002 /* ErrorLogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorLogViewController.swift; sourceTree = "<group>"; };
+		D58916FD28C7C55C00E39C8B /* LoggedError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedError.swift; sourceTree = "<group>"; };
 		D593F1932717749A006E82DE /* PatchAppOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatchAppOperation.swift; sourceTree = "<group>"; };
 		D5CA0C4A280E141900469595 /* ManagedPatron.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedPatron.swift; sourceTree = "<group>"; };
 		D5CA0C4C280E242500469595 /* AltStore 10.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "AltStore 10.xcdatamodel"; sourceTree = "<group>"; };
@@ -780,6 +791,8 @@
 		D5DAE0952804DF430034D8D4 /* UpdatePatronsOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePatronsOperation.swift; sourceTree = "<group>"; };
 		D5E1E7C028077DE90016FC96 /* FetchTrustedSourcesOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchTrustedSourcesOperation.swift; sourceTree = "<group>"; };
 		D5F2F6A82720B7C20081CCF5 /* PatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatchViewController.swift; sourceTree = "<group>"; };
+		D5F99A1728D11DB500476A16 /* AltStore10ToAltStore11.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = AltStore10ToAltStore11.xcmappingmodel; sourceTree = "<group>"; };
+		D5F99A1928D12B1400476A16 /* StoreApp10ToStoreApp11Policy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreApp10ToStoreApp11Policy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -864,6 +877,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		031AF236293E908300C6C881 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				D504F42528AD72C50014BB5D /* ProgressRing.swift */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		19104DB32909C06D00C49C7B /* EmotionalDamage */ = {
 			isa = PBXGroup;
 			children = (
@@ -1217,9 +1238,11 @@
 				BF66EEC92501AECA007EE018 /* Account.swift */,
 				BF66EEC72501AECA007EE018 /* AppID.swift */,
 				BF66EEC62501AECA007EE018 /* AppPermission.swift */,
+				D52C08ED28AEC37A006C4AE5 /* AppVersion.swift */,
 				BF66EECA2501AECA007EE018 /* DatabaseManager.swift */,
 				BF66EEC02501AECA007EE018 /* InstalledApp.swift */,
 				BF66EECB2501AECA007EE018 /* InstalledExtension.swift */,
+				D58916FD28C7C55C00E39C8B /* LoggedError.swift */,
 				BF66EEC52501AECA007EE018 /* MergePolicy.swift */,
 				BF66EEBF2501AECA007EE018 /* NewsItem.swift */,
 				BF66EEC82501AECA007EE018 /* PatreonAccount.swift */,
@@ -1247,6 +1270,7 @@
 			isa = PBXGroup;
 			children = (
 				BF66EEAE2501AECA007EE018 /* StoreAppPolicy.swift */,
+				D5F99A1928D12B1400476A16 /* StoreApp10ToStoreApp11Policy.swift */,
 				BF66EEAF2501AECA007EE018 /* InstalledAppPolicy.swift */,
 			);
 			path = Policies;
@@ -1263,6 +1287,7 @@
 				BF66EEB62501AECA007EE018 /* AltStore5ToAltStore6.xcmappingmodel */,
 				BFBF331A2526762200B7B8C9 /* AltStore8ToAltStore9.xcmappingmodel */,
 				D5CA0C4D280E249E00469595 /* AltStore9ToAltStore10.xcmappingmodel */,
+				D5F99A1728D11DB500476A16 /* AltStore10ToAltStore11.xcmappingmodel */,
 			);
 			path = "Mapping Models";
 			sourceTree = "<group>";
@@ -1321,7 +1346,7 @@
 				BF42345825101C1D006D1EB2 /* WidgetView.swift */,
 				BF98917C250AAC4F002ACF50 /* Countdown.swift */,
 				D55E163528776CB000A627A1 /* ComplicationView.swift */,
-				D504F42528AD72C50014BB5D /* ProgressRing.swift */,
+				031AF23B293E919100C6C881 /* ProgressRing.swift */,
 				BF989170250AABF4002ACF50 /* Assets.xcassets */,
 				BF989172250AABF4002ACF50 /* Info.plist */,
 			);
@@ -1409,6 +1434,7 @@
 				BFD247852284BB3300981D42 /* Frameworks */,
 				B3146EC6284F580500BBC3FD /* Roxas.xcodeproj */,
 				BFD2476B2284B9A500981D42 /* Products */,
+				031AF236293E908300C6C881 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1550,6 +1576,7 @@
 				BFF0B6912321A305007A79E1 /* AboutPatreonHeaderView.xib */,
 				BFF0B695232242D3007A79E1 /* LicensesViewController.swift */,
 				B3EE16B52925E27D00B3B1F5 /* AnisetteManager.swift */,
+				D589170128C7D93500E39C8B /* Error Log */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -1648,6 +1675,15 @@
 				BFF7C906257844C900E55F36 /* AltXPCProtocol.h */,
 			);
 			path = XPC;
+			sourceTree = "<group>";
+		};
+		D589170128C7D93500E39C8B /* Error Log */ = {
+			isa = PBXGroup;
+			children = (
+				D57FE84328C7DB7100216002 /* ErrorLogViewController.swift */,
+				D54DED1328CBC44B008B27A0 /* ErrorLogTableViewCell.swift */,
+			);
+			path = "Error Log";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2199,9 +2235,11 @@
 				BF66EEDD2501AECA007EE018 /* AppPermission.swift in Sources */,
 				BFBF331B2526762200B7B8C9 /* AltStore8ToAltStore9.xcmappingmodel in Sources */,
 				D5CA0C4E280E249E00469595 /* AltStore9ToAltStore10.xcmappingmodel in Sources */,
+				031AF23A293E90DD00C6C881 /* LoggedError.swift in Sources */,
 				BF989184250AACFC002ACF50 /* Date+RelativeDate.swift in Sources */,
 				BF66EE962501AEBC007EE018 /* ALTPatreonBenefitType.m in Sources */,
 				BFAECC5A2501B0A400528F27 /* NetworkConnection.swift in Sources */,
+				D5F99A1828D11DB500476A16 /* AltStore10ToAltStore11.xcmappingmodel in Sources */,
 				BF66EEE92501AED0007EE018 /* JSONDecoder+Properties.swift in Sources */,
 				BF66EEEB2501AED0007EE018 /* UIApplication+AppExtension.swift in Sources */,
 				BF66EED92501AECA007EE018 /* Team.swift in Sources */,
@@ -2212,10 +2250,12 @@
 				BF66EEE02501AECA007EE018 /* Account.swift in Sources */,
 				BF66EED52501AECA007EE018 /* AltStore.xcdatamodeld in Sources */,
 				BFAECC582501B0A400528F27 /* ALTConstants.m in Sources */,
+				D5F99A1A28D12B1400476A16 /* StoreApp10ToStoreApp11Policy.swift in Sources */,
 				BFAECC562501B0A400528F27 /* ALTServerError+Conveniences.swift in Sources */,
 				BFAECC592501B0A400528F27 /* Result+Conveniences.swift in Sources */,
 				BFAECC542501B0A400528F27 /* NSError+ALTServerError.m in Sources */,
 				BF66EEE12501AECA007EE018 /* DatabaseManager.swift in Sources */,
+				D52C08EE28AEC37A006C4AE5 /* AppVersion.swift in Sources */,
 				BF66EEEA2501AED0007EE018 /* UIColor+Hex.swift in Sources */,
 				BF66EECC2501AECA007EE018 /* Source.swift in Sources */,
 				BF66EED72501AECA007EE018 /* InstalledApp.swift in Sources */,
@@ -2240,7 +2280,7 @@
 				BF42345A25101C35006D1EB2 /* WidgetView.swift in Sources */,
 				D55E163728776CB700A627A1 /* ComplicationView.swift in Sources */,
 				BF98917F250AAC4F002ACF50 /* AltWidget.swift in Sources */,
-				B3919A52292DBE5400519575 /* ProgressRing.swift in Sources */,
+				031AF23D293E919100C6C881 /* ProgressRing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2261,6 +2301,7 @@
 				BF8CAE4E248AEABA004D6CCE /* UIDevice+Jailbreak.swift in Sources */,
 				D5E1E7C128077DE90016FC96 /* FetchTrustedSourcesOperation.swift in Sources */,
 				BFE338DF22F0EADB002E24B9 /* FetchSourceOperation.swift in Sources */,
+				D54DED1428CBC44B008B27A0 /* ErrorLogTableViewCell.swift in Sources */,
 				BFB6B21E231870160022A802 /* NewsViewController.swift in Sources */,
 				BFC57A652416C72400EB891E /* DeactivateAppOperation.swift in Sources */,
 				BF3BEFC124086A1E00DE7D55 /* RefreshAppOperation.swift in Sources */,
@@ -3252,6 +3293,7 @@
 		BF66EEB72501AECA007EE018 /* AltStore.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				D52E988928D002D30032BE6B /* AltStore 11.xcdatamodel */,
 				D5CA0C4C280E242500469595 /* AltStore 10.xcdatamodel */,
 				BFBF33142526754700B7B8C9 /* AltStore 9.xcdatamodel */,
 				BFF7EC4C25081E9300BDE521 /* AltStore 8.xcdatamodel */,
@@ -3263,7 +3305,7 @@
 				BF66EEBD2501AECA007EE018 /* AltStore 2.xcdatamodel */,
 				BF66EEBE2501AECA007EE018 /* AltStore 4.xcdatamodel */,
 			);
-			currentVersion = D5CA0C4C280E242500469595 /* AltStore 10.xcdatamodel */;
+			currentVersion = D52E988928D002D30032BE6B /* AltStore 11.xcdatamodel */;
 			path = AltStore.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
