@@ -85,6 +85,7 @@ class LaunchViewController: RSTLaunchViewController, UIDocumentPickerDelegate
                 var types = UTType.types(tag: "plist", tagClass: UTTagClass.filenameExtension, conformingTo: nil)
                 types.append(contentsOf: UTType.types(tag: "mobiledevicepairing", tagClass: UTTagClass.filenameExtension, conformingTo: nil))
                 let documentPickerController = UIDocumentPickerViewController(forOpeningContentTypes: types)
+                documentPickerController.shouldShowFileExtensions = true
                 documentPickerController.delegate = self
                 self.present(documentPickerController, animated: true, completion: nil)
              })

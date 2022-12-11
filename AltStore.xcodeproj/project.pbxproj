@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		031AF23A293E90DD00C6C881 /* LoggedError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58916FD28C7C55C00E39C8B /* LoggedError.swift */; };
 		031AF23D293E919100C6C881 /* ProgressRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031AF23B293E919100C6C881 /* ProgressRing.swift */; };
+		03F06CD52942C27E001C4D68 /* Bundle+AltStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1E314122A05D4C00370A3C /* Bundle+AltStore.swift */; };
 		19104D952909BAEA00C49C7B /* libimobiledevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF45872B2298D31600BD7491 /* libimobiledevice.a */; };
 		19104DB52909C06D00C49C7B /* EmotionalDamage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19104DB42909C06D00C49C7B /* EmotionalDamage.swift */; };
 		19104DBB2909C11700C49C7B /* libem_proxy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19104DA32909BC1000C49C7B /* libem_proxy.a */; };
@@ -2198,6 +2199,7 @@
 				BF580496246A3CB5008AE704 /* UIColor+AltBackup.swift in Sources */,
 				BF580482246A28F7008AE704 /* ViewController.swift in Sources */,
 				BF44EEF0246B08BA002A52F2 /* BackupController.swift in Sources */,
+				03F06CD52942C27E001C4D68 /* Bundle+AltStore.swift in Sources */,
 				BF58049B246A432D008AE704 /* NSError+AltStore.swift in Sources */,
 				BF58047E246A28F7008AE704 /* AppDelegate.swift in Sources */,
 			);
