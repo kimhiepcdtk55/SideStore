@@ -3,6 +3,10 @@
   "sources": [
     {
       "identifier": "io.sidestore.example"
+    }, 
+    {
+      "identifier": "org.qnblackcat.langkhach",
+      "https://qnblackcat.github.io/AltStore/apps.json"
     },
     {
       "identifier": "org.provenance-emu.provenance",
